@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_tracker_fultter_course/common_widgets/custom_elevated_button.dart';
 
 class SignInPage extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class SignInPage extends StatelessWidget {
       ),
       //drawer: Drawer(),
       body: _buildContent(),
+      backgroundColor: Colors.grey[300],
     );
   }
 
@@ -21,10 +23,19 @@ class SignInPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text('Sign in', textAlign: TextAlign.center,style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, letterSpacing:10),),
-          ElevatedButton(
+          CustomElevatedButton(
             child: Text('Sign in with Google'),
+            primaryColor: Colors.white,
+            onPrimaryColor: Colors.black,
             onPressed: (){},
-          )
+          ),
+          CustomElevatedButton(
+            child: Text('Sign in with Facebook'),
+            primaryColor: Colors.white,
+            onPrimaryColor: Colors.black,
+            onPressed: (){},
+          ),
+
         ],
       ),
     );
