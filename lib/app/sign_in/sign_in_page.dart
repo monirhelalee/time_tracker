@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:time_tracker_fultter_course/app/sign_in/sign_in_button.dart';
 import 'package:time_tracker_fultter_course/common_widgets/custom_elevated_button.dart';
 
 class SignInPage extends StatelessWidget {
@@ -23,16 +24,44 @@ class SignInPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Text('Sign in', textAlign: TextAlign.center,style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, letterSpacing:10),),
-          CustomElevatedButton(
-            child: Text('Sign in with Google'),
-            primaryColor: Colors.white,
-            onPrimaryColor: Colors.black,
+          SizedBox(
+            height: 20.0,
+          ),
+          SignInButton(
+            text: 'Sign in with Google',
+            pColor: Colors.white,
+            opColor: Colors.black,
             onPressed: (){},
           ),
-          CustomElevatedButton(
-            child: Text('Sign in with Facebook'),
-            primaryColor: Colors.white,
-            onPrimaryColor: Colors.black,
+          SizedBox(
+            height: 10.0,
+          ),
+          SignInButton(
+            text: 'Sign in with Facebook',
+            pColor: Color(0xff334d92),
+            opColor: Colors.white,
+            onPressed: (){},
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          SignInButton(
+            text: 'Sign in with Email',
+            pColor: Colors.teal[700],
+            opColor: Colors.white,
+            onPressed: (){},
+          ),
+          SizedBox(
+            height: 10.0,
+          ),
+          Text('OR',textAlign: TextAlign.center,),
+          SizedBox(
+            height: 10.0,
+          ),
+          SignInButton(
+            text: 'Go anonymous',
+            pColor: Colors.lime[300],
+            opColor: Colors.black,
             onPressed: (){},
           ),
 
