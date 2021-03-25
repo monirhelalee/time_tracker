@@ -27,6 +27,7 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 20.0,
           ),
+
           SignInButton(
             text: 'Sign in with Google',
             pColor: Colors.white,
@@ -45,10 +46,23 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 10.0,
           ),
-          SignInButton(
-            text: 'Sign in with Email',
-            pColor: Colors.teal[700],
-            opColor: Colors.white,
+          // SignInButton(
+          //   text: 'Sign in with Email',
+          //   pColor: Colors.teal[700],
+          //   opColor: Colors.white,
+          //   onPressed: (){},
+          // ),
+          CustomElevatedButton(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(Icons.email_outlined),
+                Text('Sign in with Email'),
+                SizedBox(width: 20,)
+              ],
+            ),
+            primaryColor: Colors.teal[700],
+            onPrimaryColor: Colors.white,
             onPressed: (){},
           ),
           SizedBox(
@@ -58,10 +72,23 @@ class SignInPage extends StatelessWidget {
           SizedBox(
             height: 10.0,
           ),
-          SignInButton(
-            text: 'Go anonymous',
-            pColor: Colors.lime[300],
-            opColor: Colors.black,
+          // SignInButton(
+          //   text: 'Go anonymous',
+          //   pColor: Colors.lime[300],
+          //   opColor: Colors.black,
+          //   onPressed: (){},
+          // ),
+          CustomElevatedButton(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(Icons.login),
+                Text('Go anonymous'),
+                SizedBox(width: 20,)
+              ],
+            ),
+            primaryColor: Colors.lime[300],
+            onPrimaryColor: Colors.black,
             onPressed: (){},
           ),
 

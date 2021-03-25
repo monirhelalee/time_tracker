@@ -4,7 +4,7 @@ import 'package:time_tracker_fultter_course/common_widgets/custom_elevated_butto
 
 class SignInButton extends CustomElevatedButton{
   SignInButton({
-    String text,
+    @required String text,
     Color pColor,
     Color opColor,
     //Color textColor,
