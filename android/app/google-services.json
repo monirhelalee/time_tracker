@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "387479606923",
+    "project_id": "time-tracker-783ca",
+    "storage_bucket": "time-tracker-783ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387479606923:android:1326b1434204bf1c12e68e",
+        "android_client_info": {
+          "package_name": "com.example.time_tracker_fultter_course"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387479606923-aebqf61ndeujmurckn8s1kmcp8o0ensn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXjGR9nO8VfSNlErEjZjVpngzuD9KJImM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387479606923-aebqf61ndeujmurckn8s1kmcp8o0ensn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
